@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore;
 using DotNetCoreSqlDb.Models;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,10 +20,10 @@ namespace DotNetCoreSqlDb.Data
 
     public class MyDatabaseContext : DbContext
     {
-        /*     public MyDatabaseContext(DbContextOptions<MyDatabaseContext> options)
+             public MyDatabaseContext(DbContextOptions<MyDatabaseContext> options)
                  : base(options)
              {
-             } */
+             }  
 
 
     public MyDatabaseContext (DbContextOptions<MyDatabaseContext> options, IHttpContextAccessor accessor)
