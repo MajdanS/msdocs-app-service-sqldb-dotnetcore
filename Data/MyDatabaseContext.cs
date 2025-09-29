@@ -20,10 +20,10 @@ namespace DotNetCoreSqlDb.Data
 
     public class MyDatabaseContext : DbContext
     {
-             public MyDatabaseContext(DbContextOptions<MyDatabaseContext> options)
+        /*     public MyDatabaseContext(DbContextOptions<MyDatabaseContext> options)
                  : base(options)
              {
-             }  
+             }  */
 
 
     public MyDatabaseContext (DbContextOptions<MyDatabaseContext> options, IHttpContextAccessor accessor)
